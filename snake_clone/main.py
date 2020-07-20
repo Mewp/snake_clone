@@ -3,10 +3,10 @@ import random
 import pygame
 import time
 
-from settings import Settings
-from stats import GameStats
-from fields import BlackField, Apple, Play
-from snake import Head, Tail
+from .settings import Settings
+from .stats import GameStats
+from .fields import BlackField, Apple, Play
+from .snake import Head, Tail
 
 
 body = []
@@ -203,7 +203,3 @@ class SnakeGame:
 
     def _start_game(self):
         self.settings.game_active = True
-
-if __name__ == '__main__':
-    sg = SnakeGame()
-    sg.run_game()
