@@ -37,12 +37,12 @@ class SnakeGame:
         self._create_board()
 
         while True:
+            self._check_events()
             if self.settings.game_active:
                 self._tail_update()
                 self._check_edges()
                 self._snake_collision()
 
-            self._check_events()
             self._screen_update()
 
 
