@@ -1,4 +1,8 @@
 from .main import SnakeGame
 
-sg = SnakeGame()
-sg.run_game()
+def run():
+    sg = SnakeGame()
+    sg.run_game()
+
+if __name__ == '__main__':
+    run()
